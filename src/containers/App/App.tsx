@@ -1,4 +1,5 @@
 import * as React from 'react'
+import ContentBlock from 'blocks/ContentBlock'
 import classes from './App.module.css'
 
 const App = () => {
@@ -11,7 +12,7 @@ const App = () => {
       </header>
 
       <main>
-        <h1>VR Studio</h1>
+        <ContentBlock />
       </main>
 
       <footer>
