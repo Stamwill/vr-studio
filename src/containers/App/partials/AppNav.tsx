@@ -15,7 +15,7 @@ const AppNav = (props: NavigationProps) => {
   return (
     <section className={classes.root}>
       {menu.map((item: Navigation, idx: number) => (
-        <a href={item.url} key={idx}>
+        <a className={classes.label} href={item.url} key={idx}>
           {item.label}
         </a>
       ))}
