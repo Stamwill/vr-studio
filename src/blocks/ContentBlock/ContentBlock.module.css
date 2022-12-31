@@ -1,0 +1,13 @@
+.root {
+  margin: 2rem;
+}
+
+.container {
+  display: flex;
+}
+
+.imgContainer {
+  position: relative;
+  width: 30vw;
+}
+ 
