@@ -24,7 +24,7 @@ export const menuPrimary = [
 export const heroData = [
   {
     heroBackground: {
-      mobile: './images/mobile/Hero.jpg',
+      mobile: '/images/mobile/Hero.jpg',
       desktop: './images/desktop/Hero.jpg',
     },
     title: 'Immersive Experiences that deliver',
@@ -34,7 +34,7 @@ export const heroData = [
 export const contentBlock = [
   {
     contentImg: {
-      mobile: './images/mobile/Interactive.jpg',
+      mobile: '/images/mobile/Interactive.jpg',
       desktop: './images/desktop/Interactive.jpg',
     },
     title: 'The leader in interactive vr',
