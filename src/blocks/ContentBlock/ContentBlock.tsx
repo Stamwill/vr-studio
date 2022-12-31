@@ -24,16 +24,16 @@ const ContentBlock = (props: ContentProps) => {
           <div className={classes.imgContainer}>
             <picture className={classes.imgContainer}>
               <source
-                className={classes.mobile}
+                className={classes.img}
                 media="(max-width: 768px)"
                 srcSet={item.contentImg.mobile}
               />
               <source
-                className={classes.tablet}
+                className={classes.img}
                 media="(max-width: 1200px)"
                 srcSet={item.contentImg.desktop}
               />
-              <img className={classes.desktop} src={item.contentImg.desktop} alt="space" />
+              <img className={classes.img} src={item.contentImg.desktop} alt="space" />
             </picture>
           </div>
 

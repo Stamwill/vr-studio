@@ -1,13 +1,25 @@
 .root {
   margin: 2rem;
+  height: 30vh;
 }
 
 .container {
   display: flex;
+  flex-direction: column;
 }
 
 .imgContainer {
-  position: relative;
-  width: 30vw;
+  margin: 0 auto;
+  max-width: 50vw;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.textContainer {
+  padding: 2rem;
 }
  
