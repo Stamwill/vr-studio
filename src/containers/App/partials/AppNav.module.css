@@ -5,4 +5,5 @@
   width: 100vw;
   position: absolute;
   color: white;
+  font-family: var(--ff-alata);
 }
