@@ -2,7 +2,6 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: var(--ff-alata);
 }
 
 :root {
@@ -11,8 +10,8 @@ body {
 
   --dark-gray: hsl(0, 0%, 55%);
   --vdark-gray: hsl(0, 0%, 41%);
-  /* --ff-alata: Alata, sans-serif;
-  --ff-josefin: 'Josefin Sans', sans-serif; */
+  --ff-alata: 'Alata', sans-serif;
+  --ff-josefin: 'Josefin Sans';
 }
 
 a {
