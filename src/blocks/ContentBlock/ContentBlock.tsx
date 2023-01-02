@@ -1,6 +1,6 @@
 import * as React from 'react'
 import Image from 'next/image'
-import classes from './contentBlock.module.css'
+import classes from './ContentBlock.module.css'
 
 interface Content {
   contentImg: {
