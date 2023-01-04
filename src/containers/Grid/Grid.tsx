@@ -2,13 +2,18 @@ import * as React from 'react'
 import { creationGrid } from 'api/mock'
 import GridItem from 'components/GridItem'
 import classes from './Grid.module.css'
+import Btn from 'components/Btn'
 
 const Grid = () => {
   return (
     <div className={classes.root}>
-      {creationGrid.map((item, i) => (
-        <GridItem key={i} {...item} />
-      ))}
+      <h2 className={classes.header}>Our Creations</h2>
+      <div className={classes.grid}>
+        {creationGrid.map((item, i) => (
+          <GridItem key={i} {...item} />
+        ))}
+      </div>
+      <Btn label="see all" link="#" />
     </div>
   )
 }

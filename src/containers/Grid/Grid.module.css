@@ -1,5 +1,17 @@
 .root {
   margin: 2rem;
+}
+
+.header {
+  font-size: 30px;
+  font-family: var(--ff-josefin);
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 1rem 0 3rem 0;
+}
+
+.grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-template-rows: auto;
