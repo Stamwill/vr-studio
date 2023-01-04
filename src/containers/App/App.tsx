@@ -1,9 +1,10 @@
 import * as React from 'react'
 import { menuPrimary, contentBlock, heroData } from 'api/mock'
-import ContentBlock from 'blocks/ContentBlock'
-import classes from './App.module.css'
 import AppNav from './partials/AppNav'
 import Hero from 'blocks/Hero'
+import ContentBlock from 'blocks/ContentBlock'
+import Grid from 'containers/Grid'
+import classes from './App.module.css'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
 
       <main>
         <ContentBlock content={contentBlock} />
+        <Grid />
       </main>
 
       <footer>
