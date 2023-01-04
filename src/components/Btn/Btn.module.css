@@ -1,0 +1,14 @@
+.root {
+  margin: 2rem;
+  text-align: center;
+}
+
+.label {
+  border: 1px solid var(--primary-black);
+  padding: 0.775rem 3rem;
+  font-family: var(--ff-alata);
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.35rem;
+}
+
