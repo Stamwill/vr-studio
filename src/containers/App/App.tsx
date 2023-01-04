@@ -4,6 +4,7 @@ import AppNav from './partials/AppNav'
 import Hero from 'blocks/Hero'
 import ContentBlock from 'blocks/ContentBlock'
 import Grid from 'containers/Grid'
+import Footer from 'containers/Footer'
 import classes from './App.module.css'
 
 const App = () => {
@@ -20,9 +21,7 @@ const App = () => {
         <Grid />
       </main>
 
-      <footer>
-        <p className={classes.test}>Footer</p>
-      </footer>
+      <Footer menu={menuPrimary} />
     </div>
   )
 }
