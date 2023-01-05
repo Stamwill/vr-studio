@@ -1,3 +1,5 @@
+export const logo = '/images/logo.svg'
+
 export const menuPrimary = [
   {
     label: 'About',
