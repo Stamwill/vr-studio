@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { menuPrimary, contentBlock, heroData } from 'api/mock'
 import AppNav from './partials/AppNav'
+import AppDrawer from './partials/AppDrawer'
 import Hero from 'blocks/Hero'
 import ContentBlock from 'blocks/ContentBlock'
 import Grid from 'containers/Grid'
@@ -20,6 +21,7 @@ const App = () => {
       <header>
         <title>VR Studio</title>
         <AppNav menu={menuPrimary} open={menuIsOpen} toggleMenu={toggleMenu} />
+        <AppDrawer menu={menuPrimary} toggleMenu={toggleMenu} open={menuIsOpen} />
         <Hero content={heroData} />
       </header>
 
