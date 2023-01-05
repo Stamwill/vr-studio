@@ -1,0 +1,41 @@
+.root {
+  /* display: inline-block;
+  z-index: 11; */
+}
+
+.root:hover {
+  cursor: pointer;
+}
+
+.container {
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.barOne,
+.barTwo,
+.barThree {
+  width: 35px;
+  height: 3px;
+  background-color: var(--primary-white);
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.menuIsOpen .barOne {
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.menuIsOpen .barTwo {
+  opacity: 0;
+}
+
+.menuIsOpen .barThree {
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+@media screen and (min-width: 1000px) {
+  .root {
+    display: none;
+  }
+}
