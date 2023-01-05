@@ -1,0 +1,56 @@
+
+.root {
+  position: fixed;
+  height: 0%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--primary-black);
+  overflow-y: hidden;
+  z-index: 10;
+  transition: 0.4s;
+}
+
+.menuIsOpen {
+  height: 100%;
+  opacity: 0.9;
+}
+
+.topContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.label {
+  cursor: pointer;
+  color: var(--primary-white);
+  font-family: var(--ff-alata);
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 25px;
+  font-size: 30px;
+  background-size: 200%;
+  transition: all 0.4s ease-out;
+}
+
+.label:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1000px) {
+  .root {
+    display: none;
+  }
+}
