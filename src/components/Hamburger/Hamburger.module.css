@@ -1,6 +1,6 @@
 .root {
-  /* display: inline-block;
-  z-index: 11; */
+position: relative;
+z-index: 100;
 }
 
 .root:hover {
