@@ -8,11 +8,18 @@ import Footer from 'containers/Footer'
 import classes from './App.module.css'
 
 const App = () => {
+  const [menuIsOpen, setMenuOpen] = React.useState(false)
+
+  const toggleMenu = () => {
+    setMenuOpen((prevState) => !prevState)
+    console.log(menuIsOpen)
+  }
+
   return (
     <div className={classes.root}>
       <header>
         <title>VR Studio</title>
-        <AppNav menu={menuPrimary} />
+        <AppNav menu={menuPrimary} open={menuIsOpen} toggleMenu={toggleMenu} />
         <Hero content={heroData} />
       </header>
 
