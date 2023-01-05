@@ -27,7 +27,7 @@ const AppNav = (props: NavigationProps) => {
           </a>
         ))}
       </div>
-      <Hamburger open={open} toggleMenu={toggleMenu} />
+      <Hamburger toggleMenu={toggleMenu} />
     </section>
   )
 }
