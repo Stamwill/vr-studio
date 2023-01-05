@@ -1,4 +1,7 @@
 import * as React from 'react'
+import classnames from 'clsx'
+import { logo } from 'api/mock'
+import Hamburger from 'components/Hamburger'
 import classes from './AppNav.module.css'
 
 interface Navigation {
@@ -8,17 +11,23 @@ interface Navigation {
 
 interface NavigationProps {
   menu: Navigation[]
+  open: boolean
+  toggleMenu: Function
 }
 
 const AppNav = (props: NavigationProps) => {
-  const { menu } = props
+  const { menu, open, toggleMenu } = props
   return (
-    <section className={classes.root}>
-      {menu.map((item: Navigation, idx: number) => (
-        <a className={classes.label} href={item.url} key={idx}>
-          {item.label}
-        </a>
-      ))}
+    <section className={classnames(classes.root, { [classes.menuIsOpen]: open })}>
+      <img className={classes.logo} src={logo} alt="company logo" />
+      <div className={classes.navBar}>
+        {menu.map((item: Navigation, idx: number) => (
+          <a className={classes.label} key={idx}>
+            {item.label}
+          </a>
+        ))}
+      </div>
+      <Hamburger open={open} toggleMenu={toggleMenu} />
     </section>
   )
 }
