@@ -25,7 +25,7 @@ const App = () => {
         <Hero content={heroData} />
       </header>
 
-      <main>
+      <main className={classes.main}>
         <ContentBlock content={contentBlock} />
         <Grid />
       </main>
