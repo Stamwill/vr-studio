@@ -1,5 +1,24 @@
 export const logo = '/images/logo.svg'
 
+export const socialMedias = [
+  {
+    img: '/images/iconFacebook.svg',
+    url: 'https://www.facebook.com',
+  },
+  {
+    img: '/images/iconTwitter.svg',
+    url: 'https://www.twitter.com',
+  },
+  {
+    img: '/images/iconPinterest.svg',
+    url: 'https://www.pinterest.com',
+  },
+  {
+    img: '/images/iconInstagram.svg',
+    url: 'https://www.instagram.com',
+  },
+]
+
 export const menuPrimary = [
   {
     label: 'About',
