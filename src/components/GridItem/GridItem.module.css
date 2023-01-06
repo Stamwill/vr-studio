@@ -15,6 +15,7 @@
   text-transform: uppercase;
   padding: 1rem;
   color: var(--primary-white);
+  margin: 0;
 }
 
 .img {
