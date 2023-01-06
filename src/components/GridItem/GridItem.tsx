@@ -15,9 +15,11 @@ const GridItem = (props: Item) => {
   return (
     <div className={classes.root}>
       <h3 className={classes.label}>{label}</h3>
-      <div className={classes.imgContainer}>
-        <img className={classes.img} src={contentImg.mobile} alt="test" />
-      </div>
+      <picture className={classes.imgContainer}>
+        <source className={classes.img} media="(max-width: 1000px)" srcSet={contentImg.mobile} />
+        <source className={classes.img} media="(max-width: 1200px)" srcSet={contentImg.desktop} />
+        <img className={classes.img} src={contentImg.desktop} alt="placeholder" />
+      </picture>
     </div>
   )
 }
