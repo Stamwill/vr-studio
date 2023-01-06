@@ -39,6 +39,7 @@ const AppDrawer = (props: AppDrawerProps) => {
         <img src={logo} alt="company logo" />
         <Hamburger toggleMenu={toggleMenu} />
       </div>
+
       <div className={classes.navBar}>
         {menu.map((item: Navigation, idx: number) => (
           <a className={classes.label} key={idx}>
