@@ -20,7 +20,20 @@ const Hero = (props: ContentProps) => {
       <div>
         {content.map((item, idx) => (
           <div key={idx}>
-            <img className={classes.img} src={item.heroBackground.mobile} alt="test" />
+            <picture className={classes.imgContainer}>
+              <source
+                className={classes.img}
+                media="(max-width: 1000px)"
+                srcSet={item.heroBackground.mobile}
+              />
+              <source
+                className={classes.img}
+                media="(max-width: 1200px)"
+                srcSet={item.heroBackground.desktop}
+              />
+              <img className={classes.img} src={item.heroBackground.desktop} alt="placeholder" />
+            </picture>
+
             <h1 className={classes.header}>{item.title}</h1>
           </div>
         ))}
