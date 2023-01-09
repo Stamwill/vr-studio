@@ -1,7 +1,7 @@
 import * as React from 'react'
 import classnames from 'clsx'
-import { logo } from 'api/mock'
 import Image from 'next/image'
+import { logo } from 'api/mock'
 import Hamburger from 'components/Hamburger'
 import classes from './AppDrawer.module.css'
 
@@ -39,7 +39,6 @@ const AppDrawer = (props: AppDrawerProps) => {
       <div className={classes.topContainer}>
         <Image src={logo} alt="company logo" width="100" height="100" />
 
-        {/* <img src={logo} alt="company logo" /> */}
         <Hamburger toggleMenu={toggleMenu} />
       </div>
 
