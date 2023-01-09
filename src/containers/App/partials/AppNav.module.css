@@ -13,8 +13,28 @@
   display: none;
 }
 
-.label:hover {
+.label {
+  display: inline-block;
+  position: relative;
   cursor: pointer;
+}
+
+.label::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary-white);
+  transform-origin: bottom;
+  transition: transform 0.25s ease-out;
+}
+
+.label:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom;
 }
 
 @media screen and (min-width: 1000px) {
