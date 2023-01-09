@@ -124,8 +124,8 @@ export const creationGrid = [
     label: 'make it fisheye',
     url: '#',
     contentImg: {
-      mobile: '/images/mobile/fishEye.jpg',
-      desktop: '/images/desktop/fishEye.jpg',
+      mobile: '/images/mobile/fisheye.jpg',
+      desktop: '/images/desktop/fisheye.jpg',
     },
   },
 ]
