@@ -37,7 +37,9 @@ const AppDrawer = (props: AppDrawerProps) => {
   return (
     <div className={classnames(classes.root, { [classes.menuIsOpen]: open })}>
       <div className={classes.topContainer}>
-        <Image src={logo} alt="company logo" width="100" height="100" />
+        <div className={classes.logoContainer}>
+          <Image src={logo} alt="company logo" fill />
+        </div>
 
         <Hamburger toggleMenu={toggleMenu} />
       </div>
