@@ -76,7 +76,7 @@ export const creationGrid = [
     label: 'night arcade',
     url: '#',
     contentImg: {
-      mobile: '/images/mobile/nightArcadejpg',
+      mobile: '/images/mobile/nightArcade.jpg',
       desktop: '/images/desktop/nightArcade.jpg',
     },
   },
