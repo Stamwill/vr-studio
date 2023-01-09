@@ -17,7 +17,38 @@
 }
 
 .label {
-  margin: 0.5rem 0;
+  padding: 0.7rem 0;
+  margin: 0.2rem 0; 
+}
+
+.label {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.label::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary-white);
+  transform-origin: bottom;
+  transition: transform 0.25s ease-out;
+}
+
+.label:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom;
+}
+
+.footerSubNav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .socialMedias {
@@ -30,4 +61,22 @@
 .copyright {
   font-size: 0.9rem;
   color: var(--dark-gray);
+}
+
+@media screen and (min-width: 1200px) {
+  .root {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .navBar {
+    flex-direction: row;
+    width: 400px;
+    justify-content: space-between;
+  }
+
+  .socialMedias {
+    width: 350px;
+    margin: 0;
+  }
 }

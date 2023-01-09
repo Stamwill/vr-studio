@@ -16,23 +16,27 @@ const Footer = (props: NavigationProps) => {
   const { menu } = props
   return (
     <section className={classes.root}>
-      <img src={logo} alt="company logo" />
-      <div className={classes.navBar}>
-        {menu.map((item: Navigation, i: number) => (
-          <a className={classes.label} href={item.url} key={i}>
-            {item.label}
-          </a>
-        ))}
+      <div className={classes.footerNav}>
+        <img src={logo} alt="company logo" />
+        <div className={classes.navBar}>
+          {menu.map((item: Navigation, i: number) => (
+            <a className={classes.label} href={item.url} key={i}>
+              {item.label}
+            </a>
+          ))}
+        </div>
       </div>
 
-      <div className={classes.socialMedias}>
-        {socialMedias.map((item, i) => (
-          <SocialMedias key={i} {...item} />
-        ))}
-      </div>
+      <div className={classes.footerSubNav}>
+        <div className={classes.socialMedias}>
+          {socialMedias.map((item, i) => (
+            <SocialMedias key={i} {...item} />
+          ))}
+        </div>
 
-      <div className={classes.copyright}>
-        <p>© 2021 Loopstudios. All rights reserved.</p>
+        <div className={classes.copyright}>
+          <p>© 2021 Loopstudios. All rights reserved.</p>
+        </div>
       </div>
     </section>
   )
