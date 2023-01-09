@@ -22,3 +22,10 @@
   height: auto;
   border-radius: 5px;
 }
+
+@media screen and (min-width: 1400px) {
+  .label {
+    width: 15%;
+    font-size: 1.9rem;
+  }
+}
