@@ -3,7 +3,7 @@
   justify-content: space-between;
   position: absolute;
   z-index: 5;
-  margin: 1rem 2rem;
+  padding: 1rem 2rem;
   width: 100vw;
   color: white;
   font-family: var(--ff-alata);
@@ -39,21 +39,19 @@
 
 @media screen and (min-width: 1000px) {
   .root {
+    margin: 2.5rem;
     display: flex;
     justify-content: space-between;
   }
+
   .navBar {
     display: flex;
     justify-content: space-evenly;
     width: 50%;
   }
-}
 
-@media screen and (min-width: 1200px) {
-  .root {
-    margin: 2.5rem;
-  }
   .label {
     font-size: 1.3rem;
   }
 }
+
