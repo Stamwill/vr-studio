@@ -1,13 +1,13 @@
 import * as React from 'react'
-import classnames from 'clsx'
 import classes from './Hamburger.module.css'
 
 interface HamburgerProps {
-  toggleMenu: Function
+  toggleMenu: (e: React.MouseEvent<HTMLElement>) => void
 }
 
 const Hamburger = (props: HamburgerProps) => {
   const { toggleMenu } = props
+
   return (
     <div className={classes.root}>
       <div className={classes.hamburger} onClick={toggleMenu}>
