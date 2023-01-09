@@ -30,16 +30,15 @@ const ContentBlock = (props: ContentProps) => {
               />
               <source
                 className={classes.img}
-                media="(max-width: 1200px)"
+                media="(max-width: 1500px)"
                 srcSet={item.contentImg.desktop}
               />
               <img className={classes.img} src={item.contentImg.desktop} alt="space" />
             </picture>
-          </div>
-
-          <div className={classes.textContainer}>
-            <h2 className={classes.header}>{item.title}</h2>
-            <p className={classes.text}>{item.text}</p>
+            <div className={classes.textContainer}>
+              <h2 className={classes.header}>{item.title}</h2>
+              <p className={classes.text}>{item.text}</p>
+            </div>
           </div>
         </div>
       ))}
