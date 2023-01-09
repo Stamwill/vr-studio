@@ -17,3 +17,9 @@
   grid-gap: 20px;
   justify-items: center;
 }
+
+@media screen and (min-width: 1400px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+ }
+}
