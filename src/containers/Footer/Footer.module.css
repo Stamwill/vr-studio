@@ -67,6 +67,7 @@
   .root {
     flex-direction: row;
     justify-content: space-evenly;
+    padding: 5rem 0;
   }
 
   .navBar {
