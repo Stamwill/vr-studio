@@ -1,7 +1,6 @@
 .root {
   display: flex;
   align-items: flex-end;
-  transition: 1s all;
 }
 
 .imgContainer {
@@ -22,9 +21,4 @@
   width: 100%;
   height: auto;
   border-radius: 5px;
-}
-
-.root:hover {
-  transform: scale(1.1);
-  cursor: pointer;
 }
