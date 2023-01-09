@@ -45,8 +45,8 @@ export const menuPrimary = [
 export const heroData = [
   {
     heroBackground: {
-      mobile: '/images/mobile/Hero.jpg',
-      desktop: '/images/desktop/Hero.jpg',
+      mobile: '/images/mobile/hero.jpg',
+      desktop: '/images/desktop/hero.jpg',
     },
     title: 'Immersive Experiences that deliver',
   },
@@ -55,8 +55,8 @@ export const heroData = [
 export const contentBlock = [
   {
     contentImg: {
-      mobile: '/images/mobile/Interactive.jpg',
-      desktop: '/images/desktop/Interactive.jpg',
+      mobile: '/images/mobile/interactive.jpg',
+      desktop: '/images/desktop/interactive.jpg',
     },
     title: 'The leader in interactive vr',
     text: 'Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.',
@@ -68,16 +68,16 @@ export const creationGrid = [
     label: 'deep earth',
     url: '#',
     contentImg: {
-      mobile: '/images/mobile/DeepEarth.jpg',
-      desktop: '/images/desktop/DeepEarth.jpg',
+      mobile: '/images/mobile/deepEarth.jpg',
+      desktop: '/images/desktop/deepEarth.jpg',
     },
   },
   {
     label: 'night arcade',
     url: '#',
     contentImg: {
-      mobile: '/images/mobile/NightArcadejpg',
-      desktop: '/images/desktop/NightArcade.jpg',
+      mobile: '/images/mobile/nightArcadejpg',
+      desktop: '/images/desktop/nightArcade.jpg',
     },
   },
   {
