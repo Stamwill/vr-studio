@@ -39,7 +39,7 @@
 
 @media screen and (min-width: 1000px) {
   .root {
-    margin: 2.5rem;
+    margin: 2rem 0;
     display: flex;
     justify-content: space-between;
   }
