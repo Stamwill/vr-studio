@@ -19,7 +19,12 @@
 .topContainer {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
+}
+
+.logoContainer {
+  position: relative;
+  min-width: 150px;
 }
 
 .navBar {
