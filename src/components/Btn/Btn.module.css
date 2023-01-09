@@ -3,12 +3,18 @@
   text-align: center;
 }
 
-.label {
+.link {
   border: 1px solid var(--primary-black);
   padding: 0.775rem 3rem;
   font-family: var(--ff-alata);
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 0.35rem;
+  transition: all 0.4s;
+}
+
+.link:hover {
+  background-color: var(--primary-black);
+  color: var(--primary-white);
 }
 
