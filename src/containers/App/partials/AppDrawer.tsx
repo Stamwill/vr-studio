@@ -12,7 +12,7 @@ interface Navigation {
 interface AppDrawerProps {
   menu: Navigation[]
   open: boolean
-  toggleMenu: Function
+  toggleMenu: (e: React.MouseEvent<HTMLElement>) => void
 }
 
 const AppDrawer = (props: AppDrawerProps) => {
