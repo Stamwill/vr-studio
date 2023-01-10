@@ -1,8 +1,9 @@
 import * as React from 'react'
 import classnames from 'clsx'
 import Image from 'next/image'
-import { logo } from 'api/mock'
+import { logo, socialMedias } from 'api/mock'
 import Hamburger from 'components/Hamburger'
+import SocialMedias from 'components/SocialMedias'
 import classes from './AppDrawer.module.css'
 
 interface Navigation {
@@ -50,6 +51,11 @@ const AppDrawer = (props: AppDrawerProps) => {
             {item.label}
           </a>
         ))}
+        <div className={classes.socialMedias}>
+          {socialMedias.map((item, i) => (
+            <SocialMedias key={i} {...item} />
+          ))}
+        </div>
       </div>
     </div>
   )

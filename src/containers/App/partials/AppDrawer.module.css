@@ -33,9 +33,17 @@
   text-align: center;
   z-index: 2;
   position: relative;
-  top: 50%;
+  top: 30%;
   transform: translateY(-50%);
   width: 100%;
+}
+
+.socialMedias {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 220px;
 }
 
 .label {
