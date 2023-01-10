@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { logo, socialMedias } from 'api/mock'
+import Image from 'next/image'
 import classes from './Footer.module.css'
 import SocialMedias from 'components/SocialMedias'
 
@@ -17,7 +18,10 @@ const Footer = (props: NavigationProps) => {
   return (
     <section className={classes.root}>
       <div className={classes.footerNav}>
-        <img src={logo} alt="company logo" />
+        <div className={classes.logoContainer}>
+          <Image src={logo} alt="company logo" fill />
+        </div>
+
         <div className={classes.navBar}>
           {menu.map((item: Navigation, i: number) => (
             <a className={classes.label} href={item.url} key={i}>

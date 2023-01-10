@@ -9,6 +9,17 @@
   padding: 2rem;
 }
 
+.logoContainer {
+  min-width: 150px;
+  max-width: 200px;
+  height: 40px;
+  position: relative;
+}
+
+.logoContainer:hover {
+  cursor: pointer;
+}
+
 .navBar {
   display: flex;
   flex-direction: column;
