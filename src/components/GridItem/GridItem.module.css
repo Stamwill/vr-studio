@@ -25,7 +25,8 @@
 
 @media screen and (min-width: 1400px) {
   .label {
-    width: 15%;
-    font-size: 1.9rem;
+    width: 200px;
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
   }
 }
