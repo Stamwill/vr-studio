@@ -1,11 +1,11 @@
 import * as React from 'react'
-import Image from 'next/image'
 import classes from './ContentBlock.module.css'
 
 interface Content {
   contentImg: {
     mobile: string
     desktop: string
+    alt: string
   }
   title: string
   text: string
@@ -33,7 +33,11 @@ const ContentBlock = (props: ContentProps) => {
                 media="(max-width: 1500px)"
                 srcSet={item.contentImg.desktop}
               />
-              <img className={classes.img} src={item.contentImg.desktop} alt="space" />
+              <img
+                className={classes.img}
+                src={item.contentImg.desktop}
+                alt={item.contentImg.alt}
+              />
             </picture>
             <div className={classes.textContainer}>
               <h2 className={classes.header}>{item.title}</h2>
