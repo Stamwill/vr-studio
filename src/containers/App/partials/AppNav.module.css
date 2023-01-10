@@ -45,14 +45,15 @@
 @media screen and (min-width: 1000px) {
   .root {
     margin: 1.7rem 0;
+    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
   }
 
   .navBar {
     display: flex;
-    justify-content: space-evenly;
-    width: 50%;
+    justify-content: space-between;
+    width: 40%;
   }
 
   .label {
