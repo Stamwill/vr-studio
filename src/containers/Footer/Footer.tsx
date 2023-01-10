@@ -16,7 +16,7 @@ interface NavigationProps {
 const Footer = (props: NavigationProps) => {
   const { menu } = props
   return (
-    <section className={classes.root}>
+    <footer className={classes.root}>
       <div className={classes.footerNav}>
         <div className={classes.logoContainer}>
           <Image src={logo} alt="company logo" fill />
@@ -42,7 +42,7 @@ const Footer = (props: NavigationProps) => {
           <p>© 2021 Loopstudios. All rights reserved.</p>
         </div>
       </div>
-    </section>
+    </footer>
   )
 }
 
