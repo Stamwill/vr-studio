@@ -6,7 +6,7 @@ import Btn from 'components/Btn'
 
 const Grid = () => {
   return (
-    <div className={classes.root}>
+    <section className={classes.root}>
       <h2 className={classes.header}>Our Creations</h2>
       <div className={classes.grid}>
         {creationGrid.map((item, i) => (
@@ -14,7 +14,7 @@ const Grid = () => {
         ))}
       </div>
       <Btn label="see all" link="#" />
-    </div>
+    </section>
   )
 }
 
