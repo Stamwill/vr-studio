@@ -3,7 +3,7 @@ import { menuPrimary, contentBlock, heroData } from 'api/mock'
 import AppNav from './partials/AppNav'
 import AppDrawer from './partials/AppDrawer'
 import Hero from 'blocks/Hero'
-import ContentBlock from 'blocks/ContentBlock'
+import Introduction from 'blocks/IntroductionBlock'
 import Grid from 'containers/Grid'
 import Footer from 'containers/Footer'
 import classes from './App.module.css'
@@ -26,7 +26,7 @@ const App = () => {
       </header>
 
       <main className={classes.main}>
-        <ContentBlock content={contentBlock} />
+        <Introduction content={contentBlock} />
         <Grid />
       </main>
 
