@@ -1,13 +1,14 @@
 import * as React from 'react'
 import classnames from 'clsx'
 import Image from 'next/image'
+import Link from 'next/link'
 import { logo } from 'api/mock'
 import Hamburger from 'components/Hamburger'
 import classes from './AppNav.module.css'
 
 interface Navigation {
   label: string
-  url: string
+  href: string
 }
 
 interface NavigationProps {
@@ -25,9 +26,9 @@ const AppNav = (props: NavigationProps) => {
       </div>
       <div className={classes.navBar}>
         {menu.map((item: Navigation, idx: number) => (
-          <a className={classes.label} key={idx}>
+          <Link href={item.href} className={classes.label} key={idx}>
             {item.label}
-          </a>
+          </Link>
         ))}
       </div>
       <Hamburger toggleMenu={toggleMenu} />
