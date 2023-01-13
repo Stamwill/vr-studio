@@ -6,7 +6,7 @@ import SocialMedias from 'components/SocialMedias'
 
 interface Navigation {
   label: string
-  url: string
+  href: string
 }
 
 interface NavigationProps {
@@ -24,7 +24,7 @@ const Footer = (props: NavigationProps) => {
 
         <div className={classes.navBar}>
           {menu.map((item: Navigation, i: number) => (
-            <a className={classes.label} href={item.url} key={i}>
+            <a className={classes.label} href={item.href} key={i}>
               {item.label}
             </a>
           ))}
