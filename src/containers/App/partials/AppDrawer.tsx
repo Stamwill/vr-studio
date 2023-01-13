@@ -8,7 +8,7 @@ import classes from './AppDrawer.module.css'
 
 interface Navigation {
   label: string
-  url: string
+  href: string
 }
 
 interface AppDrawerProps {
