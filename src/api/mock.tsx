@@ -23,26 +23,26 @@ export const socialMedias = [
   },
 ]
 
-export const menuPrimary = [
+export const menu = [
   {
     label: 'About',
-    url: '#',
+    href: '/about',
   },
   {
     label: 'Careers',
-    url: '#',
+    href: '#',
   },
   {
     label: 'Events',
-    url: '#',
+    href: '#',
   },
   {
     label: 'Products',
-    url: '#',
+    href: '#',
   },
   {
     label: 'Support',
-    url: '#',
+    href: '#',
   },
 ]
 
