@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { logo, socialMedias } from 'api/mock'
+import Link from 'next/link'
 import Image from 'next/image'
 import classes from './Footer.module.css'
 import SocialMedias from 'components/SocialMedias'
@@ -19,7 +20,9 @@ const Footer = (props: NavigationProps) => {
     <footer className={classes.root}>
       <div className={classes.footerNav}>
         <div className={classes.logoContainer}>
-          <Image src={logo} alt="company logo" fill />
+          <Link href={'/'}>
+            <Image src={logo} alt="company logo" fill />
+          </Link>
         </div>
 
         <div className={classes.navBar}>
