@@ -22,8 +22,11 @@ const AppNav = (props: NavigationProps) => {
   return (
     <section className={classnames(classes.root, { [classes.menuIsOpen]: open })}>
       <div className={classes.logoContainer}>
-        <Image src={logo} fill alt="company logo" />
+        <Link href={'/'}>
+          <Image src={logo} fill alt="company logo" />
+        </Link>
       </div>
+
       <div className={classes.navBar}>
         {menu.map((item: Navigation, idx: number) => (
           <Link href={item.href} className={classes.label} key={idx}>

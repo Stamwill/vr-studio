@@ -1,6 +1,7 @@
 import * as React from 'react'
 import classnames from 'clsx'
 import Image from 'next/image'
+import Link from 'next/link'
 import { logo, socialMedias } from 'api/mock'
 import Hamburger from 'components/Hamburger'
 import SocialMedias from 'components/SocialMedias'
@@ -39,7 +40,9 @@ const AppDrawer = (props: AppDrawerProps) => {
     <div className={classnames(classes.root, { [classes.menuIsOpen]: open })}>
       <div className={classes.topContainer}>
         <div className={classes.logoContainer}>
-          <Image src={logo} alt="company logo" fill />
+          <Link href={'/'} onClick={toggleMenu}>
+            <Image src={logo} alt="company logo" fill />
+          </Link>
         </div>
 
         <Hamburger toggleMenu={toggleMenu} />
@@ -47,9 +50,9 @@ const AppDrawer = (props: AppDrawerProps) => {
 
       <div className={classes.navBar}>
         {menu.map((item: Navigation, idx: number) => (
-          <a className={classes.label} key={idx}>
+          <Link className={classes.label} key={idx} href={item.href} onClick={toggleMenu}>
             {item.label}
-          </a>
+          </Link>
         ))}
         <div className={classes.socialMedias}>
           {socialMedias.map((item, i) => (
