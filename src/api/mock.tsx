@@ -30,19 +30,19 @@ export const menu = [
   },
   {
     label: 'Careers',
-    href: '#',
+    href: '/careers',
   },
   {
     label: 'Events',
-    href: '#',
+    href: '/events',
   },
   {
     label: 'Products',
-    href: '#',
+    href: '/products',
   },
   {
     label: 'Support',
-    href: '#',
+    href: '/support',
   },
 ]
 
