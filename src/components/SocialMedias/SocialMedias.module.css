@@ -2,4 +2,9 @@
   width: 25px;
   height: 25px;
   position: relative;
+  transition: all 0.4s;
+}
+
+.root:hover {
+  transform: scale(1.2);
 }
