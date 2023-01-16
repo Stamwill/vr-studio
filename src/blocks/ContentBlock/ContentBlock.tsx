@@ -13,9 +13,9 @@ const ContentBlock = (props: ContentProps) => {
   return (
     <div className={classes.root}>
       <div className={classes.container}>
-        <h2 className={classes.header}>{header}</h2>
-
         <div className={classes.textContainer}>
+          <h2 className={classes.header}>{header}</h2>
+
           <p className={classes.content}>{text}</p>
         </div>
 
