@@ -57,7 +57,7 @@ export const heroData = [
   },
 ]
 
-export const contentBlock = [
+export const introductionBlock = [
   {
     contentImg: {
       mobile: '/images/mobile/interactive.jpg',
@@ -66,6 +66,19 @@ export const contentBlock = [
     },
     title: 'The leader in interactive vr',
     text: 'Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.',
+  },
+]
+
+export const aboutContent = [
+  {
+    contentImg: '/images/vrstudio.jpg',
+    header: 'About Header',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti labore soluta dolor commodi fuga quam perferendis voluptatibus ab maxime laboriosam, quos illum id recusandae nobis ratione officiis illo accusamus minima!',
+  },
+  {
+    contentImg: '/images/vrstudio.jpg',
+    header: 'Sub Header',
+    text: 'Eaque vitae, velit beatae alias, aliquam porro dolore dolorum aperiam maiores autem repellat, praesentium cupiditate incidunt quam inventore maxime possimus iure iusto.',
   },
 ]
 
