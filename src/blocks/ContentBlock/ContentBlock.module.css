@@ -1,0 +1,21 @@
+.root {
+  color: black;
+}
+
+.header {
+  font-size: 2rem;
+  font-family: var(--ff-josefin);
+  text-align: center;
+}
+
+.content {
+  color: var(--vdark-gray);
+  font-family: var(--ff-alata);
+}
+
+.imgContainer {
+  position: relative;
+  width: 100%;
+  height: 30vh;
+  margin: 3rem 0;
+}
