@@ -30,7 +30,9 @@ export default function App({ Component, pageProps }: AppProps) {
         <AppDrawer menu={menu} open={menuIsOpen} toggleMenu={toggleMenu} />
       </header>
 
-      <Component {...pageProps} />
+      <main>
+        <Component {...pageProps} />
+      </main>
       <Footer menu={menu} />
     </GlobalProvider>
   )
