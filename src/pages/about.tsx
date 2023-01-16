@@ -1,13 +1,15 @@
 import * as React from 'react'
-import { heroData } from 'api/mock'
-import Hero from 'blocks/Hero'
-import classes from 'styles/Home.module.css'
+import { aboutContent } from 'api/mock'
+import ContentBlock from 'blocks/ContentBlock'
+import classes from 'styles/about.module.css'
 
 export default function About() {
   return (
     <main className={classes.aboutMain}>
       <div className={classes.root}>
-        <Hero content={heroData} />
+        {aboutContent.map((content, i) => (
+          <ContentBlock {...content} key={i} />
+        ))}
       </div>
     </main>
   )
