@@ -39,10 +39,10 @@ const IntroductionBlock = (props: ContentProps) => {
                 alt={item.contentImg.alt}
               />
             </picture>
-            <div className={classes.textContainer}>
-              <h2 className={classes.header}>{item.title}</h2>
-              <p className={classes.text}>{item.text}</p>
-            </div>
+          </div>
+          <div className={classes.textContainer}>
+            <h2 className={classes.header}>{item.title}</h2>
+            <p className={classes.text}>{item.text}</p>
           </div>
         </div>
       ))}
