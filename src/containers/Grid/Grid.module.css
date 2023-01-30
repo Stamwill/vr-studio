@@ -19,6 +19,10 @@
 }
 
 @media screen and (min-width: 1400px) {
+  .root {
+    margin: 0 5rem;
+  }
+
   .grid {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
  }
