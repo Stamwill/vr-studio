@@ -4,11 +4,12 @@
 
 .aboutMain {
   padding: 1.5rem;
+  margin: 0 1rem;
 }
 
 
 @media screen and (min-width: 1000px) {
   .aboutMain {
-    padding: 1.5rem 8rem;
+    /* padding: 1.5rem 8rem; */
   }
 }
