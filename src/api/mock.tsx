@@ -1,4 +1,5 @@
 export const logo = '/images/logo.svg'
+export const eventImgOne = '/images/eventImgOne.jpg'
 
 export const socialMedias = [
   {
@@ -154,5 +155,23 @@ export const creationGrid = [
       desktop: '/images/desktop/fisheye.jpg',
       alt: 'A warped picture',
     },
+  },
+]
+
+export const eventData = [
+  {
+    title: 'Event title',
+    label: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    img: '/images/eventImgOne.jpg',
+  },
+  {
+    title: 'Event title',
+    label: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    img: '/images/eventImgOne.jpg',
+  },
+  {
+    title: 'Event title',
+    label: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    img: '/images/eventImgOne.jpg',
   },
 ]
