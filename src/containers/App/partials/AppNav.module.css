@@ -6,6 +6,7 @@
   color: white;
   font-family: var(--ff-alata);
   background-color: var(--primary-black);
+  z-index: 1;
 }
 
 .navBar {
@@ -21,6 +22,8 @@
   display: inline-block;
   position: relative;
   cursor: pointer;
+  z-index: 2;
+  opacity: 1;
 }
 
 .label::after {
