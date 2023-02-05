@@ -1,7 +1,7 @@
 .root {
   position: relative;
   display: flex;
-  border: 0.2px solid var(--primary-black);
+  border: none;
   border-radius: 25px;
   background-color: var(--primary-black);
   color: var(--primary-white);
@@ -55,6 +55,7 @@
   overflow: hidden;
   transition: all 1s;
   clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
+  border-radius: 25px;
 }
 
 @media screen and (min-width: 1000px) {
@@ -90,16 +91,24 @@
     transition-delay: 0.1s;
   }
 
+  .imgContainer {
+
+  }
+
   .root:hover {
     -webkit-box-shadow: 4px 10px 5px 0px rgba(0,0,0,0.40);
     -moz-box-shadow: 4px 10px 5px 0px rgba(0,0,0,0.40);
     box-shadow: 4px 10px 5px 0px rgba(0,0,0,0.40);
+    border-top-right-radius: 26px;
   }
   
   .root:hover .imgContainer {
     clip-path: polygon(46% 0, 100% 0, 100% 100%, 0% 100%);
     left: 70%;
     width: 30%;
+    border-radius: 0;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
     opacity: 1;
   }
 

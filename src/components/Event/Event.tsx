@@ -22,7 +22,7 @@ const Event = (props: Content) => {
           <p className={classes.label}>{label}</p>
         </div>
         <div className={classes.imgContainer}>
-          <Image src={img} alt="event" fill />
+          <Image src={img} alt="event" fill style={{ objectFit: 'cover' }} />
         </div>
       </div>
     </div>
