@@ -163,15 +163,18 @@ export const eventData = [
     title: 'Event title',
     label: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     img: '/images/eventImgOne.jpg',
+    date: '2023/03/17',
   },
   {
     title: 'Event title',
     label: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     img: '/images/eventImgOne.jpg',
+    date: '2023/06/28',
   },
   {
     title: 'Event title',
     label: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     img: '/images/eventImgOne.jpg',
+    date: '2023/11/05',
   },
 ]
