@@ -10,9 +10,16 @@
 }
 
 .header {
-  font-size: 2.5rem;
-  padding: 0 1rem;
+  font-size: 1.5rem;
+  padding: 0 1rem 2rem;
   border-bottom: 1px solid gray;
   letter-spacing: 3px;
   font-family: var(--ff-josefin);
+}
+
+
+@media screen and (min-width: 1000px) {
+  .header {
+    font-size: 2.5rem;
+  }
 }
