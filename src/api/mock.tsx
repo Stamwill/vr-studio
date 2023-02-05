@@ -161,7 +161,8 @@ export const creationGrid = [
 export const eventData = [
   {
     title: 'Event title',
-    label: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    label:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     img: '/images/eventImgOne.jpg',
     date: '2023/03/17',
   },
