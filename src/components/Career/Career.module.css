@@ -11,7 +11,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 180px;
+  width: 200px;
   height: 250px;
 }
 
@@ -24,11 +24,12 @@
 }
 
 .textContainer {
-
+  text-align: center;
 }
 
 .title {
-  font-family: var(--ff-josefin)
+  font-family: var(--ff-josefin);
+  margin-bottom: 0;
 }
 
 .label{
