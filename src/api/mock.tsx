@@ -179,3 +179,46 @@ export const eventData = [
     date: '2023/11/05',
   },
 ]
+
+export const careerData = [
+  {
+    title: 'Job Position',
+    label: '3 open jobs',
+    img: '/images/eventImgOne.jpg',
+  },
+  {
+    title: 'Job Position',
+    label: 'No open jobs',
+    img: '/images/eventImgOne.jpg',
+  },
+  {
+    title: 'Job Position',
+    label: '1 open job',
+    img: '/images/eventImgOne.jpg',
+  },
+  {
+    title: 'Job Position',
+    label: '3 open jobs',
+    img: '/images/eventImgOne.jpg',
+  },
+  {
+    title: 'Job Position',
+    label: '4 open jobs',
+    img: '/images/eventImgOne.jpg',
+  },
+  {
+    title: 'Job Position',
+    label: '3 open jobs',
+    img: '/images/eventImgOne.jpg',
+  },
+  {
+    title: 'Job Position',
+    label: '1 open job',
+    img: '/images/eventImgOne.jpg',
+  },
+  {
+    title: 'Job Position',
+    label: '2 open jobs',
+    img: '/images/eventImgOne.jpg',
+  },
+]
