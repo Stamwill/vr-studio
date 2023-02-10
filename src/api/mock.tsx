@@ -73,7 +73,7 @@ export const introductionBlock = [
 export const aboutContent = [
   {
     contentImg: '/images/vrstudio.jpg',
-    header: 'About Header',
+    header: 'About loopstudios',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti labore soluta dolor commodi fuga quam perferendis voluptatibus ab maxime laboriosam, quos illum id recusandae nobis ratione officiis illo accusamus minima!',
   },
   {
