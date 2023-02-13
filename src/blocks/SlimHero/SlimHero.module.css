@@ -1,0 +1,25 @@
+.root {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  height: 40vh;
+  margin-bottom: 5rem;
+}
+
+.imgContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: -200px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.title {
+  color: var(--primary-white);
+  text-transform: uppercase;
+}
