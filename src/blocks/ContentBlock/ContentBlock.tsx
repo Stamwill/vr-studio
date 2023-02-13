@@ -11,7 +11,7 @@ interface ContentProps {
 const ContentBlock = (props: ContentProps) => {
   const { contentImg, header, text } = props
   return (
-    <div className={classes.root}>
+    <section className={classes.root}>
       <div className={classes.container}>
         <div className={classes.textContainer}>
           <h2 className={classes.header}>{header}</h2>
@@ -23,7 +23,7 @@ const ContentBlock = (props: ContentProps) => {
           <Image src={contentImg} alt={''} fill />
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
