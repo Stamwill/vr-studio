@@ -21,6 +21,16 @@
   width: 100%;
   overflow: hidden;
   border-radius: 100%;
+  transition: all 0.5s;
+}
+
+.container:hover {
+  cursor: pointer;
+}
+
+.container:hover .imgContainer {
+  /* box-shadow: 8px 8px 5px 5px var(--vdark-gray); */
+  transform: scale(1.1);
 }
 
 .textContainer {
