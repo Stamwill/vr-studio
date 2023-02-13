@@ -2,9 +2,22 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* align-items: center; */
   text-align: center;
   font-family: var(--ff-alata);
-  /* padding: 1.5rem; */
+}
+
+.container {
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+.careerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0 auto;
 }
 
 .label {
@@ -15,5 +28,18 @@
   font-family: var(--ff-josefin);
   font-size: 2rem;
   margin-top: 2rem;
+}
+
+@media screen and (min-width: 700px) {
+  .careerContainer {
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .careerContainer {
+    width: 1000px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
