@@ -30,10 +30,6 @@ export const menu = [
     href: '/about',
   },
   {
-    label: 'Careers',
-    href: '/careers',
-  },
-  {
     label: 'Events',
     href: '/events',
   },
@@ -42,12 +38,18 @@ export const menu = [
     href: '/products',
   },
   {
+    label: 'Careers',
+    href: '/careers',
+  },
+  {
     label: 'Support',
     href: '/support',
   },
 ]
 
-export const heroData = [
+// HERO DATA
+
+export const landingHero = [
   {
     heroBackground: {
       mobile: '/images/mobile/hero.jpg',
@@ -57,6 +59,18 @@ export const heroData = [
     title: 'Immersive Experiences that deliver',
   },
 ]
+
+export const positionsHero = [
+  {
+    heroBackground: {
+      img: '/images/careerBackground.jpg',
+      alt: 'Man with VR headset',
+    },
+    title: 'Are you looking to change the future of VR?',
+  },
+]
+
+//////////////////////////////////////
 
 export const introductionBlock = [
   {
