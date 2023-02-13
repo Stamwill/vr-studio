@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { introductionBlock, heroData } from 'api/mock'
+import { introductionBlock, landingHero } from 'api/mock'
 import Hero from 'blocks/Hero'
 import Introduction from 'blocks/IntroductionBlock'
 import Grid from 'containers/Grid'
@@ -10,7 +10,7 @@ const App = () => {
     <div className={classes.root}>
       <header>
         <title>VR Studio</title>
-        <Hero content={heroData} />
+        <Hero content={landingHero} />
       </header>
 
       <main className={classes.main}>
