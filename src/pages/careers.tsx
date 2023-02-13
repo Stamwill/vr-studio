@@ -1,14 +1,14 @@
 import * as React from 'react'
-import { heroData, careerData } from 'api/mock'
-import Hero from 'blocks/Hero'
+import { positionsHero, careerData } from 'api/mock'
+import SlimHero from 'blocks/SlimHero'
 import Career from 'components/Career'
 import classes from 'styles/careers.module.css'
 
 export default function Careers() {
   return (
     <main className={classes.main}>
-      <Hero content={heroData} />
-      <div className={classes.root}>
+      <SlimHero content={positionsHero} />
+      <div className={classes.container}>
         <div>
           <p className={classes.label}>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor accusantium dignissimos,
@@ -17,9 +17,12 @@ export default function Careers() {
           </p>
           <h1 className={classes.header}>We are currently hiring</h1>
         </div>
-        {careerData.map((item, idx) => (
-          <Career {...item} key={idx} />
-        ))}
+
+        <div className={classes.careerContainer}>
+          {careerData.map((item, idx) => (
+            <Career {...item} key={idx} />
+          ))}
+        </div>
       </div>
     </main>
   )
