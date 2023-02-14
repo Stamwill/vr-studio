@@ -1,8 +1,7 @@
-.main {
+.root {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
   text-align: center;
   font-family: var(--ff-alata);
 }
@@ -30,16 +29,16 @@
   margin-top: 2rem;
 }
 
-@media screen and (min-width: 700px) {
-  .careerContainer {
-  }
-}
-
 @media screen and (min-width: 1000px) {
   .careerContainer {
     width: 1000px;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  .label {
+    width: 1000px;
+    margin: 0 auto;
   }
 }
 
