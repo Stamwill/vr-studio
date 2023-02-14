@@ -5,7 +5,7 @@ import classes from 'styles/events.module.css'
 
 export default function Events() {
   return (
-    <main className={classes.main}>
+    <div className={classes.main}>
       <div className={classes.container}>
         <h2 className={classes.header}>Upcoming Events</h2>
         <div className={classes.eventContainer}>
@@ -14,6 +14,6 @@ export default function Events() {
           ))}
         </div>
       </div>
-    </main>
+    </div>
   )
 }
