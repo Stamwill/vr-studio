@@ -1,10 +1,10 @@
-import App from "../containers/App";
-import styles from "../styles/Home.module.css";
+import App from '../containers/App'
+import classes from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className={classes.container}>
       <App />
     </div>
-  );
+  )
 }
