@@ -13,10 +13,10 @@ const App = () => {
         <Hero content={landingHero} />
       </header>
 
-      <main className={classes.main}>
+      <div className={classes.main}>
         <Introduction content={introductionBlock} />
         <Grid />
-      </main>
+      </div>
     </div>
   )
 }
