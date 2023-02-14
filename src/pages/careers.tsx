@@ -6,7 +6,7 @@ import classes from 'styles/careers.module.css'
 
 export default function Careers() {
   return (
-    <main className={classes.main}>
+    <div className={classes.root}>
       <SlimHero content={positionsHero} />
       <div className={classes.container}>
         <div>
@@ -18,12 +18,12 @@ export default function Careers() {
           <h1 className={classes.header}>We are currently hiring</h1>
         </div>
 
-        <div className={classes.careerContainer}>
+        <section className={classes.careerContainer}>
           {careerData.map((item, idx) => (
             <Career {...item} key={idx} />
           ))}
-        </div>
+        </section>
       </div>
-    </main>
+    </div>
   )
 }
