@@ -54,7 +54,7 @@
   .navBar {
     display: flex;
     justify-content: space-between;
-    width: 500px;
+    width: 300px;
   }
 
   .label {
