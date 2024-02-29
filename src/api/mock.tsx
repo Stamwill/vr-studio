@@ -34,16 +34,8 @@ export const menu = [
     href: '/events',
   },
   {
-    label: 'Products',
-    href: '/products',
-  },
-  {
     label: 'Careers',
     href: '/careers',
-  },
-  {
-    label: 'Support',
-    href: '/support',
   },
 ]
 
